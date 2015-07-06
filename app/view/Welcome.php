@@ -8,7 +8,7 @@
 			<h1>Sky PHP Framework</h1>
 		</div>
 		<div id="content">
-		<h2>Release Notes for Sky ver1.0.0beta</h2>
+		<h2>Release Notes for Sky <?php echo SKY_VERSION;?></h2>
 
 		</div>
 	</body>

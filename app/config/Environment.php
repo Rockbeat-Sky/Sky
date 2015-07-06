@@ -5,7 +5,6 @@ Environment Registers
 Root of Namespace => Directory Folder
 */
 return [
-	'Sky' => SYS_PATH,
+	'Sky' => VENDOR_PATH.'Sky'.DS,
 	'App' => APP_PATH,
-	'Big' => VENDOR_PATH.'Nodess'.DS
 ];

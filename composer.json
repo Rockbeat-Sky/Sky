@@ -1,0 +1,20 @@
+{
+    "name": "sky/sky",
+    "description": "The Sky PHP Framework",
+	"license": "MIT",
+	"homepage": "http://rockbeat.web.id",
+	"type": "project",
+	"authors": [
+        {
+            "name": "Hansen Wong",
+            "email": "huanghanzen@gmail.com",
+            "homepage": "http://rockbeat.web.id",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+		"sky/core" : "1.0.*",
+		"monolog/monolog": "1.0.*"
+    }
+}
