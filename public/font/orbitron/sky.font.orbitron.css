@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Orbitorn Light;
+    src: url(orbitron-light.otf);
+}
+@font-face {
+    font-family: Orbitorn Medium;
+    src: url(orbitron-medium.otf);
+}
+@font-face {
+    font-family: Orbitorn Black;
+    src: url(orbitron-black.otf);
+}
+@font-face {
+    font-family: Orbitorn Bold;
+    src: url(orbitron-bold.otf);
+}

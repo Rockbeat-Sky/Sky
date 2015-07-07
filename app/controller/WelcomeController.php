@@ -15,22 +15,13 @@
  */
  
 use Sky\core\Controller;
-use Sky\core\Loader;
-use Sky\core\Config;
-use Sky\core\Language;
-use Sky\debug\ClassLoader;
+use Sky\core\View;
 
 class WelcomeController extends Controller{
 
 	public function index(){
 		
-		$this->view('App.Welcome');
-		
-		echo '<pre>';
-		
-		Loader::getClass('App.libs.Test');
-		
-		$t =  new ClassLoader;
-		$t->all();
+		View::load('App.Welcome',[]);
+
 	}
 }
