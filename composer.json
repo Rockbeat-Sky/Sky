@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-		"sky/core" : "1.0.*",
+		"sky/core" : "dev-master",
 		"monolog/monolog": "1.0.*"
     }
 }
