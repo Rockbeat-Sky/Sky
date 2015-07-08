@@ -1,6 +1,8 @@
 #Sky PHP FrameWork
-Sky is development framework for PHP with a modern patterns and MVC* Structure.
-with speed performance and flexible and easy to develop for all user level is our priority.
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+
+[Sky Framework](http://www.rockbeat.web.id/sky) is development PHP framework with a modern patterns and MVC* Structure.
+Speed performance and flexible and easy to develop for all user level is our priority.
 
 ##Installing Sky Framework via Composer
 You can install Sky Framework into your project using

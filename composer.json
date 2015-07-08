@@ -1,6 +1,7 @@
 {
     "name": "sky/sky",
     "description": "The Sky PHP Framework",
+	"keywords":["framework","sky","rockbeat","rockman84"],
 	"license": "MIT",
 	"homepage": "http://rockbeat.web.id",
 	"type": "project",
@@ -8,13 +9,16 @@
         {
             "name": "Hansen Wong",
             "email": "huanghanzen@gmail.com",
-            "homepage": "http://rockbeat.web.id",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-		"sky/core" : "dev-master",
-		"monolog/monolog": "1.0.*"
-    }
+		"sky/framework" : "dev-master"
+    },
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		}
+	}
 }

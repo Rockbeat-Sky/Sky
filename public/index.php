@@ -13,23 +13,38 @@
  * @link		http://rockbeat.web.id
  * @since		Version 1.0
  */
+/*
+|--------------------------------------------------------------------------
+| Set Up Folder Name
+|--------------------------------------------------------------------------
+*/
+error_reporting( E_ALL );
 
-/**
-* Set up your folder file
+ini_set( "display_errors", 1 ); 
+
+/*
+|--------------------------------------------------------------------------
+| Set Up Folder Name
+|--------------------------------------------------------------------------
 */
 $application_folder = 'app';
-$vendor_folder = 'vendor';
-$public_folder = 'public';
 
-// --------------------------------------------------------------------
-/**
-* WARRING THIS BELOW DONT CHANGES ANY VALUE IF YOU DONT KNOW WHAT YOU DO!
+/*
+|--------------------------------------------------------------------------
+| WARRING THIS BELOW DONT CHANGES ANY VALUE IF YOU DONT KNOW WHAT YOU DO!
+|--------------------------------------------------------------------------
 */
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__DIR__) . DS);
 
 define('APP_PATH', ROOT . $application_folder . DS);
-define('VENDOR_PATH', ROOT . $vendor_folder . DS);
-define('PUBLIC_PATH', ROOT . $public_folder . DS);
+define('VENDOR_PATH', ROOT . 'vendor' . DS);
+define('PUBLIC_PATH', __DIR__ . DS);
 
-require VENDOR_PATH.'sky'.DS.'core'.DS.'Sky.php';
+$_SKY_PATH = VENDOR_PATH. 'sky' . DS . 'framework' . DS . 'src' . DS . 'core'.DS. 'Sky.php';
+
+if(!is_file($_SKY_PATH)){
+	user_error('Sky Framework Not Found');
+	exit;
+}
+require_once $_SKY_PATH;
