@@ -6,5 +6,5 @@ Root of Namespace => Directory Folder
 */
 return [
 	'Sky' => VENDOR_PATH.'Sky'.DS,
-	'App' => APP_PATH,
+	APP_NAME => APP_PATH,
 ];

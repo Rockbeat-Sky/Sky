@@ -16,6 +16,16 @@
 return [
 	/*
 	|--------------------------------------------------------------------------
+	| Default TimeZone
+	|--------------------------------------------------------------------------
+	|
+	| This for global time zone
+	|
+	*/
+	'default_timezone' => 'asia/jakarta',
+	
+	/*
+	|--------------------------------------------------------------------------
 	| Default Language
 	|--------------------------------------------------------------------------
 	|
@@ -26,7 +36,7 @@ return [
 	*/
 	'language' => 'en', // default language
 	
-	
+	'public_folder' => 'public',
 	/*
 	|--------------------------------------------------------------------------
 	| Default Character Set
@@ -37,10 +47,6 @@ return [
 	|
 	*/
 	'charset' => 'UTF-8',
-	
-	'fmt_time' => 'h:i:s A',
-	
-	'fmt_date' => 'y/m/d',
 	
 	/*
 	|--------------------------------------------------------------------------
@@ -77,9 +83,45 @@ return [
 	| Cache Directory Path
 	|--------------------------------------------------------------------------
 	|
-	| Leave this BLANK unless you would like to set something other than the default
-	| system/cache/ folder.  Use a full server path with trailing slash.
+	| set true value to enable cache
+	*/
+	'enable_cache' => false,
+	
+	'cache_path' => APP_PATH . 'cache' . DS,
+	
+	/*
+	|--------------------------------------------------------------------------
+	| Log
+	|--------------------------------------------------------------------------
+	|
+	| log configuration using monolog package
 	|
 	*/
-	'cache_path' => APP_PATH.'cache'
+	// enable log by level, to disable just set empty array []
+	'enable_log' => [100,400,500,550],
+	
+	/*
+	|--------------------------------------------------------------------------
+	| Split file by time
+	|--------------------------------------------------------------------------
+	| ex:
+	| 	'y' split file by year
+	| 	'y-m' split file by month (default)
+	| 	'y-m-d' split file by day 
+	*/
+	'log_split_time' => 'y-m',
+	
+	// path location log file will be save
+	'log_path' => APP_PATH.'log'.DS,
+	
+	// log file name
+	'log_filename' => [
+		100	=> '100.debug.log',
+		200 => '200.info.log',
+		300	=> '300.warning.log',
+		400	=> '400.error.log',
+		500 => '500.critical.log',
+        550 => '550.alert.log'
+	]
+
 ];
