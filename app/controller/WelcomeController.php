@@ -20,7 +20,7 @@ use Sky\core\View;
 class WelcomeController extends Controller{
 
 	public function index(){
-		
+
 		View::load('App.Welcome',[]);
 
 	}

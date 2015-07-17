@@ -22,6 +22,7 @@ error_reporting( E_ALL );
 
 ini_set( "display_errors", 1 ); 
 
+define('MODE_USER','development');
 /*
 |--------------------------------------------------------------------------
 | Set-up Application Name and Folder Name
