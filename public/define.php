@@ -13,21 +13,25 @@
  * @link		http://rockbeat.web.id
  * @since		Version 1.0
  */
+
+define('MODE_USER','development');
 /*
 |--------------------------------------------------------------------------
-| Error Reporting
+| Set-up Application Name and Folder Name
 |--------------------------------------------------------------------------
 */
-error_reporting( E_ALL );
+define('APP_NAME','App');
 
-ini_set( "display_errors", 1 ); 
+$application_folder = 'app';
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'define.php';
+/*
+|--------------------------------------------------------------------------
+| WARRING THIS BELOW DONT CHANGES ANY VALUE IF YOU DONT KNOW WHAT YOU DO!
+|--------------------------------------------------------------------------
+*/
+define('DS', DIRECTORY_SEPARATOR);
+define('ROOT', dirname(__DIR__) . DS);
 
-$_SKY_PATH = VENDOR_PATH. 'sky' . DS . 'framework' . DS . 'src' . DS . 'core'.DS. 'Sky.php';
-
-if(!is_file($_SKY_PATH)){
-	user_error('Sky Framework Not Found');
-	exit;
-}
-require_once $_SKY_PATH;
+define('APP_PATH', ROOT . $application_folder . DS);
+define('VENDOR_PATH', ROOT . 'vendor' . DS);
+define('PUBLIC_PATH', __DIR__ . DS);
