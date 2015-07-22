@@ -1,8 +1,10 @@
 <html>
 	<header>
-		<link rel="stylesheet" type="text/css" href="http://localhost/sky/public/font/orbitron/sky.font.orbitron.css" />
-		<link rel="stylesheet" type="text/css" href="http://localhost/sky/public/css/sky.style.css" />
 		<title>Sky Framework</title>
+		
+		<link rel="stylesheet" type="text/css" href="<?php echo _publicUrl('font/orbitron/sky.font.orbitron.css');?>" />
+		<link rel="stylesheet" type="text/css" href="<?php echo _publicUrl('css/sky.style.css');?>" />
+		
 	</header>
 	<body>
 		<div id="header">

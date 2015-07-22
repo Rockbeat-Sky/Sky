@@ -64,27 +64,30 @@
  * flags =>
  * A key/value array of driver specific connection options.
  */
- 
-$db['default'] = array(
-	'datasource' => 'Database/Mysql',
-	'persistent' => false,
-	'host' => 'localhost',
-	'login' => 'root',
-	'password' => '',
-	'database' => 'test',
-	'prefix' => '',
-	//'encoding' => 'utf8',
-);
+$db = [
+	'entity_type'		=> 'Annotation',
+	
+	'entity_path' 		=> [
+		APP_PATH.'models'.DS
+	],
+	
+	'developer_mode' 	=> true,
+	
+	'connect' => [
+	
 
-$db['test'] = array(
-	'datasource' => 'Database/Mysql',
-	'persistent' => false,
-	'host' => 'localhost',
-	'login' => 'user',
-	'password' => 'password',
-	'database' => 'test_database_name',
-	'prefix' => '',
-	//'encoding' => 'utf8',
-);
+		'driver' 		=> 'pdo_mysql',
+		
+		'host' 			=> 'localhost',
+		
+		'user' 			=> 'root',
+		
+		'password' 		=> '',
+		
+		'dbname' 		=> 'test',
+		
+	]
+];
 
-return $db['default'];
+
+return $db;

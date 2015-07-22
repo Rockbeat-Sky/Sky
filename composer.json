@@ -14,7 +14,10 @@
     ],
     "require": {
         "php": ">=5.4.0",
-		"sky/framework" : "dev-master"
+		"sky/framework" : "dev-master",
+		"monolog/monolog" : "~1.1",
+		"doctrine/orm" : "2.5.0",
+		"symfony/yaml" : "2.7.2"
     },
 	"autoload": {
 		"psr-4": {
