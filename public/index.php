@@ -22,31 +22,7 @@ error_reporting( E_ALL );
 
 ini_set( "display_errors", 1 ); 
 
-<<<<<<< HEAD
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'define.php';
-=======
-define('MODE_USER','development');
-/*
-|--------------------------------------------------------------------------
-| Set-up Application Name and Folder Name
-|--------------------------------------------------------------------------
-*/
-define('APP_NAME','App');
-
-$application_folder = 'app';
-
-/*
-|--------------------------------------------------------------------------
-| WARRING THIS BELOW DONT CHANGES ANY VALUE IF YOU DONT KNOW WHAT YOU DO!
-|--------------------------------------------------------------------------
-*/
-define('DS', DIRECTORY_SEPARATOR);
-define('ROOT', dirname(__DIR__) . DS);
-
-define('APP_PATH', ROOT . $application_folder . DS);
-define('VENDOR_PATH', ROOT . 'vendor' . DS);
-define('PUBLIC_PATH', __DIR__ . DS);
->>>>>>> bb9117d9857a9c090c59ddc761172e72c1740162
 
 $_SKY_PATH = VENDOR_PATH. 'sky' . DS . 'framework' . DS . 'src' . DS . 'core'.DS. 'Sky.php';
 
