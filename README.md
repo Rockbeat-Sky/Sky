@@ -10,12 +10,12 @@ You can install Sky Framework into your project using
 
 if Composer is installed globally:
 ```
-$ composer create-project --prefer-dist sky/sky [app_name]
+$ composer create-project sky/sky:dev-master [app_name]
 ```
 
 Example:
 ```
-$ composer create-project --prefer-dist sky/sky Tester
+$ composer create-project sky/sky:dev-master Tester
 ```
 
 ##Official Documentation
